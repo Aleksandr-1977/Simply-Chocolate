@@ -5,53 +5,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simply Chokolate</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+        integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
-        integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
     <!--Header-->
     <header class="page-header">
-        <div class="containers">
-            <nav class="page-nav"></nav>
-            <a class="page-logo" href="./index.html"><span class="logo">Simply </span>Chokolate</a>
-            <ul class="page-text-header">
-                <li class="text-header-home"><a class="header-home" href="./index.html">Home</a></li>
-                <li class="text-header-how"><a class="header-how" href="#how-its-made">How it’s made?</a></li>
-                <li class="text-header-chok"><a class="header-chok" href="#chocolate-is-loved">Chocolate is loved</a>
-                </li>
-            </ul>
+        <div class="containers containers-header">
+            <nav class="page-nav">
+                <a class="page-logo" href="./index.html"><span class="logo">Simply </span>Chokolate</a>
+                <ul class="page-text-header">
+                    <li class="text-header-home"><a class="header-home" href="./index.html">Home</a></li>
+                    <li class="text-header-how"><a class="header-how" href="#how-its-made">How it’s made?</a></li>
+                    <li class="text-header-chok"><a class="header-chok" href="#chocolate-is-loved">Chocolate is
+                            loved</a>
+                    </li>
+                </ul>
             </nav>
         </div>
     </header>
     <!--/Header-->
     <!--Section 1-->
     <main>
-        <section class="button-section">
-            <div class="containers">
-                <h1 class="main-text">Treat yourself or a loved one to
+        <section class="hero-section">
+            <div class="containers hero-containers">
+                <h1 class="hero-text">Treat yourself or a loved one to
                     our finest ingredients for a moment
                     of pure delight!</h1>
-                <button class="bt-buy-now" type="button">Buy now</button>
-                <button class="bt-how-its-made" type="button">How it’s made</button>
-                <button class="bt-scroll-down" type="button">scroll down</button>
+                <div class="hero-btn">
+                    <button class="bt-buy-now" type="button">Buy now</button>
+                    <a class="bt-how-its-made" href="#how-made">How it’s made</a>
+                    <a class="bt-scroll-down" href="#benefits">scroll down</a>
+                </div>
             </div>
         </section>
         <!--/Section 1-->
         <!--Section 2-->
         <section class="description-section">
-            <div class="containers">
+            <div class="containers discriptiom-containers">
                 <ul class="description-page">
                     <li class="page-title">
-                        <h3 class="title">Unsurpassed taste</h2>
+                        <h3 class="title-discription">Unsurpassed taste</h2>
                             <p class="title-text">Crafted with the finest quality cocoa beans and a dedication to
                                 perfection, each
                                 bite is
@@ -62,8 +65,8 @@
                                 Taste
                                 and discover a new level of chocolate bliss.</p>
                     </li>
-                    <li>
-                        <h3 class="title">Affordable price</h3>
+                    <li class="page-title">
+                        <h3 class="title-discription">Affordable price</h3>
                         <p class="title-text">Indulge in high-quality chocolate without breaking the bank with Simply
                             Chocolate's
                             selection of
@@ -71,8 +74,8 @@
                             sacrificing
                             taste or quality. Browse our selection and indulge in affordable luxury today.</p>
                     </li>
-                    <li>
-                        <h3 class="title">Own production</h3>
+                    <li class="page-title">
+                        <h3 class="title-discription">Own production</h3>
                         <p class="title-text">We take pride in our own production process, ensuring that every step is
                             carefully
                             crafted
@@ -87,11 +90,12 @@
         </section>
         <!--/Section 2-->
         <!--Section 3-->
-        <section class="page-foto">
-            <div class="containers">
-                <h2 class="title-page-foto">IT ALL ADDS UP TO ONE EXCEPTIONAL <span class="orange-logo">TASTE</span>
+        <section class="ingredients-section">
+            <div class="containers ingredients-containers">
+                <h2 class="ingredients-title">IT ALL ADDS UP TO ONE EXCEPTIONAL <span class="orange-logo">TASTE</span>
                     SENSATION</h2>
-                <p class="text-page-foto">At Simply Chocolate, we believe that the secret to exceptional chocolate is in
+                <p class="ingredients-text">At Simply Chocolate, we believe that the secret to exceptional chocolate is
+                    in
                     the details.
                     From the
                     sourcing
@@ -99,14 +103,18 @@
                     process
                     adds
                     up to one exceptional taste sensation.</p>
-                <ul class="main-foto-page-foto">
-                    <li><img class="foto-page-foto" src="./img/milk-chocolate.jpg" alt="MILK CHOCOLATE" height="270">
+                <ul class="ingredients-foto-part">
+                    <li class="ingredients-foto"><img class="foto-page-foto" src="./img/milk-chocolate.jpg"
+                            alt="MILK CHOCOLATE" height="270">
                     </li>
-                    <li><img class="foto-page-foto" src="./img/milk.jpg" alt="Milk" height="270">
+                    <li class="ingredients-foto"><img class="foto-page-foto" src="./img/milk.jpg" alt="Milk"
+                            height="270">
                     </li>
-                    <li><img class="foto-page-foto" src="./img/hazelnuts.jpg" alt="Nuts" height="270">
+                    <li class="ingredients-foto"><img class="foto-page-foto" src="./img/hazelnuts.jpg" alt="Nuts"
+                            height="270">
                     </li>
-                    <li><img class="foto-page-foto" src="./img/chocolate.jpg" alt="Chokolate" height="270">
+                    <li class="ingredients-foto"><img class="foto-page-foto" src="./img/chocolate.jpg" alt="Chokolate"
+                            height="270">
                     </li>
                 </ul>
             </div>

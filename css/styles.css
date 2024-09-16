@@ -1,162 +1,306 @@
 /*------------Body------------------------------------------------*/
 body {
-    font-family: "Montserrat", system-ui;
-    color: #434455;
-    background-color: #ffffff;
-  }
-  ul,
-  ol {
-    list-style-type: none;
-  }
-  a {
-    text-decoration: none;
-    color: inherit;
-  }
-  button {
-    cursor: pointer;
-  }
-  /*----------/Body------------------------------------------------*/
-  /*----------Header---------------------------------------------- */
-.logo{font-style: italic;
-font-weight: 700;
-font-size: 18px;
-line-height: 1.11;
-letter-spacing: -0.03em;
-color: #111111;}
-.page-logo{
-font-weight: 700;
-font-size: 18px;
-line-height: 1.11111;
-letter-spacing: -0.03em;
-color: #111111;
-text-transform: uppercase;}
-.page-text-header{
-font-weight: 500;
-font-size: 14px;
-line-height: 1.14286;
-letter-spacing: -0.02em;
-color: #111111;}
-.header-home:hover, .header-home:focus, .header-how:hover, 
-.header-how:focus, .header-chok:hover, .header-chok:focus {
-    color: #fd9222;}
+  font-family: 'Montserrat', system-ui;
+  color: #434455;
+  background-color: #ffffff;
+}
+ul,
+ol {
+  list-style-type: none;
+  padding-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+button {
+  cursor: pointer;
+}
+/*----------/Body------------------------------------------------*/
+.containers {
+  max-width: 1168px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+/*----------Header---------------------------------------------- */
+.page-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-style: italic;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.11;
+  letter-spacing: -0.03em;
+  color: #111111;
+}
+.page-logo {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.11111;
+  letter-spacing: -0.03em;
+  color: #111111;
+  text-transform: uppercase;
+  margin-right: 631px;
+}
+.page-text-header {
+  display: flex;
+  column-gap: 24px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14286;
+  letter-spacing: -0.02em;
+  color: #111111;
+}
+.header-home,
+.header-how,
+.header-chok {
+  display: block;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.header-home:hover,
+.header-home:focus,
+.header-how:hover,
+.header-how:focus,
+.header-chok:hover,
+.header-chok:focus {
+  color: #fd9222;
+}
 /*-----------/Header--------------------------------------------*/
 /*-----------Section1-------------------------------------------*/
-.button-section{background-color: #1e1823;;}
-.main-text{font-weight: 500;
-font-size: 28px;
-line-height: 1.21;
-letter-spacing: -0.03em;
-color: #ffffff;}
-.bt-buy-now{
-font-family: "Montserrat", sans-serif;
-font-weight: 600;
-font-size: 14px;
-color: #ffffff;
-background-color: #fd9222;;}
-.bt-how-its-made{
-font-weight: 600;
-font-size: 14px;
-color: #ffffff;}
-.bt-scroll-down{
-font-weight: 500;
-font-size: 14px;
-line-height: 1.28571;
-letter-spacing: -0.03em;
-color: #ffffff;}
+.hero-section {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #1e1823;
+  max-width: 1200px;
+  border-radius: 30px;
+}
+.hero-containers {
+  padding: 391px 72px 40px;
+  color: #ffffff;
+}
+.hero-text {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.21;
+  letter-spacing: -0.03em;
+  color: #ffffff;
+  max-width: 484px;
+  margin-bottom: 32px;
+}
+.hero-btn {
+  display: flex;
+  align-items: center;
+}
+.bt-buy-now {
+  font-weight: 600;
+  font-size: 14px;
+  color: #ffffff;
+  background-color: #fd9222;
+  min-width: 144px;
+  height: 45px;
+  border-radius: 100px;
+  padding: 14px 40px;
+  bottom: none;
+  margin-right: 14px;
+}
+.bt-how-its-made {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 14px;
+  color: #ffffff;
+  border: 1px solid #fff;
+  border-radius: 100px;
+  padding: 14px 40px;
+  min-width: 183px;
+  height: 45px;
+}
+.bt-scroll-down {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.03em;
+  color: #ffffff;
+  margin-left: auto;
+}
 
 /*-----------/Section1-------------------------------------------*/
 /*-----------Section2-------------------------------------------*/
-.description-section{background-color: #1e1823;}
-.title{font-weight: 600;
-font-size: 18px;
-color: #ffffff;}
-.title-text{font-weight: 400;
-    font-size: 14px;
-    letter-spacing: -0.02em;
-    color: #ffffffb3;}
+.discriptiom-containers {
+  padding: 0 34px 0 34px;
+}
+.description-section {
+  background-color: #1e1823;
+  margin-top: 72px;
+  margin-bottom: 50px;
+}
+.description-page {
+  display: flex;
+  justify-content: center;
+  column-gap: 88px;
+}
+.page-title {
+  width: calc((100% - 2 * 88px) / 3);
+}
+.title-discription {
+  font-weight: 600;
+  font-size: 18px;
+  color: #ffffff;
+  margin-bottom: 18px;
+}
+.title-text {
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.7);
+}
 /*-----------/Section2-------------------------------------------*/
 /*-----------Section3-------------------------------------------*/
-.title-page-foto{font-weight: 600;
-    font-size: 24px;
-    line-height: 1.17;
-    letter-spacing: -0.03em;
-    text-transform: uppercase;
-    text-align: center;
-    color: #111111;}
-.orange-logo{color: #fd9222;}
-.text-page-foto{font-weight: 400;
-    font-size: 14px;
-    line-height: 1.29;
-    letter-spacing: -0.02em;
-    text-align: center;
-    color: #111111;}
+.ingredients-section {
+  margin-top: 50px;
+}
+.ingredients-containers {
+  display: block;
+}
+.ingredients-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #111111;
+  max-width: 411px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 28px;
+}
+.orange-logo {
+  color: #fd9222;
+}
+.ingredients-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #111111;
+  max-width: 486px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+.ingredients-foto-part {
+  display: flex;
+}
+
 /*-----------/Section3-------------------------------------------*/
 /*-----------Section4-------------------------------------------*/
-.title-how-its-made{font-weight: 600;
-    font-size: 24px;
-    line-height: 1.17;
-    letter-spacing: -0.03em;
-    text-transform: uppercase;
-    text-align: center;
-    color: #111111;}
-.discription-text-how-its-made{font-weight: 600;
-    font-size: 18px;
-    line-height: 1.33;
-    color: #111111;}
-.text-how-its-made{font-weight: 400;
-    font-size: 14px;
-    line-height: 1.29;
-    letter-spacing: -0.02em;
-    color: #111111;}
+.title-how-its-made {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #111111;
+}
+.discription-text-how-its-made {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  color: #111111;
+}
+.text-how-its-made {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: #111111;
+}
 /*-----------/Section4-------------------------------------------*/
 /*-----------Section5-------------------------------------------*/
-.title-text-owner{font-weight: 600;
-    font-size: 24px;
-    line-height: 1.16667;
-    letter-spacing: -0.03em;
-    text-transform: uppercase;
-    text-align: center;
-    color: #111111;}
-.name-main-text-owner{font-weight: 600;
-    font-size: 18px;
-    line-height: 1.33;
-    text-align: center;
-    color: #111111;}
-.text-page-owner{font-weight: 400;
-    font-size: 14px;
-    line-height: 1.28571;
-    letter-spacing: -0.02em;
-    text-align: center;
-    color: rgba(17, 17, 17, 0.7);}
-.bt-leave{font-weight: 600;
-    font-size: 18px;
-    color: #111111;}    
+.title-text-owner {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.16667;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #111111;
+}
+.name-main-text-owner {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  text-align: center;
+  color: #111111;
+}
+.text-page-owner {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: rgba(17, 17, 17, 0.7);
+}
+.bt-leave {
+  font-weight: 600;
+  font-size: 18px;
+  color: #111111;
+}
 /*-----------/Section5-------------------------------------------*/
 /*-----------Footer-------------------------------------------*/
-.footer-page{background-color: #1e1823;}
-.logo-footer{font-weight: 500;
-    font-size: 28px;
-    line-height: 1.21429;
-    letter-spacing: -0.02em;
-    color: #ffffff;}
-.text-footer{font-weight: 500;
-    font-size: 14px;
-    line-height: 1.29;
-    text-align: center;
-    color: #ffffff;}    
-.link-contact{font-weight: 400;
-    font-size: 14px;
-    line-height: 1.29;
-    letter-spacing: -0.02em;
-    text-align: center;
-    color: #ffffff;}
-.nav-title-footer{font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14286;
-    letter-spacing: -0.02em;
-    color: #fff;}
-.footer-home:hover, .footer-home:focus,
-.footer-how:hover, .footer-how:focus, 
-.footer-chok:hover, .footer-chok:focus {
-        color: #fd9222;}
+.footer-page {
+  background-color: #1e1823;
+}
+.logo-footer {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.21429;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+}
+.text-footer {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: center;
+  color: #ffffff;
+}
+.link-contact {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #ffffff;
+}
+.nav-title-footer {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14286;
+  letter-spacing: -0.02em;
+  color: #fff;
+}
+.footer-home:hover,
+.footer-home:focus,
+.footer-how:hover,
+.footer-how:focus,
+.footer-chok:hover,
+.footer-chok:focus {
+  color: #fd9222;
+}
 /*-----------/Footer-------------------------------------------*/
