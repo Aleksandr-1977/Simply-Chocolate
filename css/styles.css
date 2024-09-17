@@ -1,4 +1,4 @@
-/*------------Body------------------------------------------------*/
+/*-----------Body-------------------------------------*/
 body {
   font-family: 'Montserrat', system-ui;
   color: #434455;
@@ -23,13 +23,13 @@ img {
 button {
   cursor: pointer;
 }
-/*----------/Body------------------------------------------------*/
+/*----------/Body------------------------------------*/
 .containers {
   max-width: 1168px;
   padding: 0 16px;
   margin: 0 auto;
 }
-/*----------Header---------------------------------------------- */
+/*----------Header----------------------------------- */
 .page-nav {
   display: flex;
   justify-content: space-between;
@@ -76,8 +76,8 @@ button {
 .header-chok:focus {
   color: #fd9222;
 }
-/*-----------/Header--------------------------------------------*/
-/*-----------Section1-------------------------------------------*/
+/*-----------/Header----------------------------------*/
+/*----------Section1----------------------------------*/
 .hero-section {
   margin-left: auto;
   margin-right: auto;
@@ -135,16 +135,18 @@ button {
   color: #ffffff;
   margin-left: auto;
 }
-
-/*-----------/Section1-------------------------------------------*/
-/*-----------Section2-------------------------------------------*/
+/*-----------/Section1--------------------------------*/
+/*-----------Section2---------------------------------*/
+.section-paddigs {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
 .discriptiom-containers {
   padding: 0 34px 0 34px;
 }
 .description-section {
   background-color: #1e1823;
   margin-top: 72px;
-  margin-bottom: 50px;
 }
 .description-page {
   display: flex;
@@ -166,8 +168,8 @@ button {
   letter-spacing: -0.02em;
   color: rgba(255, 255, 255, 0.7);
 }
-/*-----------/Section2-------------------------------------------*/
-/*-----------Section3-------------------------------------------*/
+/*-----------/Section2--------------------------------*/
+/*----------Section3----------------------------------*/
 .ingredients-section {
   margin-top: 50px;
 }
@@ -204,10 +206,19 @@ button {
 }
 .ingredients-foto-part {
   display: flex;
+  gap: 19px;
 }
-
-/*-----------/Section3-------------------------------------------*/
-/*-----------Section4-------------------------------------------*/
+/*-----------/Section3--------------------------------*/
+/*----------Section4-----------------------------------*/
+.how-its-made-section {
+}
+.how-made-content {
+  display: flex;
+  column-gap: 20px;
+}
+.how-made-text-content {
+  padding: 32px;
+}
 .title-how-its-made {
   font-weight: 600;
   font-size: 24px;
@@ -216,12 +227,14 @@ button {
   text-transform: uppercase;
   text-align: center;
   color: #111111;
+  margin-bottom: 50px;
 }
 .discription-text-how-its-made {
   font-weight: 600;
   font-size: 18px;
   line-height: 1.33;
   color: #111111;
+  margin-bottom: 28px;
 }
 .text-how-its-made {
   font-weight: 400;
@@ -230,8 +243,31 @@ button {
   letter-spacing: -0.02em;
   color: #111111;
 }
-/*-----------/Section4-------------------------------------------*/
-/*-----------Section5-------------------------------------------*/
+.main-text-how-its-made:not(:last-child) {
+  margin-bottom: 24px;
+}
+/*-----------/Section4--------------------------------*/
+/*----------Section5----------------------------------*/
+.section-chocolate-is-loved {
+  padding-bottom: 100px;
+}
+.main-text-owner {
+  display: flex;
+  column-gap: 28px;
+  margin-bottom: 50px;
+}
+.owner-avatars {
+  width: calc((100% - 56px) / 3);
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 15px;
+  box-shadow: 0 9px 100px 0 rgba(17, 17, 17, 0.03);
+  background: #fff;
+  padding: 56px 24px 24px;
+}
+.reviews-list-avatar {
+  margin-bottom: 18px;
+  justify-content: center;
+}
 .title-text-owner {
   font-weight: 600;
   font-size: 24px;
@@ -240,6 +276,8 @@ button {
   text-transform: uppercase;
   text-align: center;
   color: #111111;
+  margin-bottom: 50px;
+  margin-top: 0px;
 }
 .name-main-text-owner {
   font-weight: 600;
@@ -247,6 +285,7 @@ button {
   line-height: 1.33;
   text-align: center;
   color: #111111;
+  margin-bottom: 24px;
 }
 .text-page-owner {
   font-weight: 400;
@@ -257,12 +296,25 @@ button {
   color: rgba(17, 17, 17, 0.7);
 }
 .bt-leave {
+  display: block;
   font-weight: 600;
   font-size: 18px;
   color: #111111;
+  border: 1px solid #fd9222;
+  border-radius: 100px;
+  padding: 14px 40px;
+  min-width: 222px;
+  background-color: #fff;
+  margin-left: auto;
+  margin-right: auto;
 }
-/*-----------/Section5-------------------------------------------*/
-/*-----------Footer-------------------------------------------*/
+.bt-leave:hover,
+.bt-leave:focus {
+  background: #fd9222;
+  color: #fff;
+}
+/*-----------/Section5--------------------------------*/
+/*-------------Footer----------------------------------*/
 .footer-page {
   background-color: #1e1823;
 }
@@ -303,4 +355,4 @@ button {
 .footer-chok:focus {
   color: #fd9222;
 }
-/*-----------/Footer-------------------------------------------*/
+/*-----------/Footer----------------------------------*/
