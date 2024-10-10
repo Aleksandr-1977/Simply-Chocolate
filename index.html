@@ -365,8 +365,39 @@
     </footer>
     <!--/Footer-->
     <!--Backdrop-->
-    <div class="backdrop">
-        <div class="modal"></div>
+    <div class="backdrop is-open">
+        <div class="modal">
+            <button class="close-icon-btn" type="button"><svg class="close-icon" width="28"
+                    height="28">
+                    <use href="./img/icons.svg#icon-x-close"></use>
+                </svg></button>
+            <h3 class="modal-title">LEAVE A REVIEW ABOUT <span class="modal-title-orange">OUR
+                    CHOCOLATE</span></h3>
+            <form class="modal-form">
+                <div class="modal-wrapper-input">
+                    <label class="modal-label" for="user-name">Name</label>
+                    <div>
+                        <input class="modal-input" type="text" name="user-name" id="user-name">
+                    </div>
+                </div>
+                <div class="modal-wrapper-input">
+                    <label class="modal-label" for="email">Email</label>
+                    <div><input class="modal-input" type="email" name="email" id="email"></div>
+                </div>
+                <div class="modal-wrapper-input">
+                    <label class="modal-label" for="phone-number">Phone
+                        number</label>
+                    <div><input class="modal-input" type="tel" name="phone-number"
+                            id="phone-number"></div>
+                </div>
+                <div class="modal-wrapper-input">
+                    <label class="modal-label" for="comment">Comment</label>
+                    <div><textarea class="modal-textarea" type="text" name="comment" id="comment"
+                            placeholder="Enter text"></textarea></div>
+
+                </div>
+            </form>
+        </div>
     </div>
     <!--/Backdrop-->
 </body>
