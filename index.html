@@ -50,14 +50,54 @@
                             <use href="./img/icons.svg#icon-twitter"></use>
                         </svg>
                     </a></li>
-
             </ul>
+            <button class="burger-btn"><svg class="burger-btn-icon" width="28" height="28"
+                    data-menu-open>
+                    <use href="./img/icons.svg#icon-burger"></use>
+                </svg></button>
         </div>
+        <!------------Mobile menu------------->
+        <div class="mobile-menu" data-menu>
+            <div class="containers mobile-menu-container">
+                <button class="mobile-menu-btn" type="button" data-menu-close><svg
+                        class="mobile-menu-btn-icon" width="28" height="28">
+                        <use href="./img/icons.svg#icon-x-close"></use>
+                    </svg></button>
+                <nav class="mobile-menu-nav">
+                    <ul class="mobile-menu-title">
+                        <li class="text-header-home"><a class="header-home"
+                                href="./index.html">Home</a>
+                        </li>
+                        <li class="text-header-how"><a class="header-how" href="#how-its-made">How
+                                it’s
+                                made?</a></li>
+                        <li class="text-header-chok"><a class="header-chok"
+                                href="#chocolate-is-loved">Chocolate is
+                                loved</a>
+                        </li>
+                    </ul>
+                </nav>
+                <ul class="mobile-menu-soc-list">
+                    <li><a href="https://www.instagram.com" target="_blank"
+                            class="social-list-link">
+                            <svg class="social-list-icon" width="24" height="24">
+                                <use href="./img/icons.svg#icon-instagram"></use>
+                            </svg>
+                        </a></li>
+                    <li><a href="https://x.com/?lang=ru" target="_blank" class="social-list-link">
+                            <svg class="social-list-icon" width="24" height="24">
+                                <use href="./img/icons.svg#icon-twitter"></use>
+                            </svg>
+                        </a></li>
+                </ul>
+            </div>
+        </div>
+        <!------------/Mobile menu------------>
     </header>
     <!--/Header-->
     <!--Section 1-->
     <main>
-        <section class="hero-section">
+        <section class="hero-section hidden">
             <div class="containers hero-containers">
                 <h1 class="hero-text">Treat yourself or a loved one to
                     our finest ingredients for a moment
@@ -75,7 +115,7 @@
         </section>
         <!--/Section 1-->
         <!--Section 2-->
-        <section class="description-section section-paddigs">
+        <section class="description-section section-paddigs hidden">
             <div class="containers discription-containers">
                 <h2 class="visually-hidden" id="benefits">Our benefits</h2>
                 <ul class="description-page">
@@ -135,7 +175,7 @@
         </section>
         <!--/Section 2-->
         <!--Section 3-->
-        <section class="ingredients-section section-paddigs">
+        <section class="ingredients-section section-paddigs hidden">
             <div class="containers ingredients-containers">
                 <h2 class="ingredients-title">IT ALL ADDS UP TO ONE EXCEPTIONAL <span
                         class="orange-logo">TASTE</span>
@@ -230,7 +270,7 @@
         </section>
         <!--/Section 3-->
         <!--Section 4-->
-        <section class="how-its-made-section section-paddigs">
+        <section class="how-its-made-section section-paddigs hidden">
             <div class="containers">
 
                 <h2 id="how-its-made" class="title-how-its-made">HOW IT’S <span
@@ -285,7 +325,7 @@
         </section>
         <!--/Section 4-->
         <!--Section 5-->
-        <section class="section-chocolate-is-loved section-paddigs">
+        <section class="section-chocolate-is-loved section-paddigs hidden">
             <div class="containers">
                 <h2 class="title-text-owner" id="chocolate-is-loved"><span
                         class="orange-logo">Chocolate</span> is loved
@@ -330,7 +370,7 @@
     <!--/Section 5-->
 
     <!--Footer-->
-    <footer class="footer-page">
+    <footer class="footer-page hidden">
         <div class="containers">
             <div class="footer-container">
                 <h2 class="logo-footer"><span class="orange-logo">Chocolate</span> a delicious cure
@@ -373,7 +413,7 @@
     </footer>
     <!--/Footer-->
     <!--Backdrop-->
-    <div class="backdrop" data-modal>
+    <div class="backdrop hidden" data-modal>
         <div class="modal">
             <button class="close-icon-btn" type="button" data-modal-close><svg class="close-icon"
                     width="28" height="28">
@@ -434,6 +474,7 @@
     </div>
     <!--/Backdrop-->
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>
