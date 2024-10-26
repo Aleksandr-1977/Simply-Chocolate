@@ -45,16 +45,14 @@ button {
   padding: 0 20px;
   margin: 0 auto;
 }
-@media screen and (min-width: 768) {
+@media screen and (min-width: 768px) {
   .containers {
     max-width: 768px;
-    padding: 0 32px;
   }
 }
-@media screen and (min-width: 1200) {
+@media screen and (min-width: 1200px) {
   .containers {
-    max-width: 1168px;
-    padding: 0 16px;
+    max-width: 1200px;
   }
 }
 /*----------Header----------------------------------- */
@@ -90,6 +88,104 @@ button {
   border: none;
   background-color: transparent;
 }
+@media screen and (min-width: 768px) {
+  .burger-btn {
+    display: none;
+  }
+  .containers-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 28px 0;
+  }
+  .page-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+    margin-right: 48px;
+  }
+  .logo {
+    font-style: italic;
+    font-size: 14px;
+    line-height: 1.29;
+  }
+  .page-logo {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.03em;
+    color: #111111;
+    text-transform: uppercase;
+  }
+  .page-text-header {
+    display: flex;
+    column-gap: 24px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: -0.02em;
+    color: #111111;
+  }
+  .header-home,
+  .header-how,
+  .header-chok {
+    display: block;
+    padding: 32px 0;
+  }
+  .header-home:hover,
+  .header-home:focus,
+  .header-how:hover,
+  .header-how:focus,
+  .header-chok:hover,
+  .header-chok:focus {
+    color: #fd9222;
+  }
+  .social-list {
+    display: flex;
+    column-gap: 18px;
+  }
+  .social-list-link {
+    stroke: #111111;
+    transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .social-list-link:hover,
+  .social-list-link:focus {
+    stroke: #fd9222;
+  }
+  .social-list-icon {
+    fill: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .containers-header {
+    max-width: 1136px;
+    column-gap: 90px;
+  }
+  .logo {
+    font-size: 18px;
+    line-height: 1.11;
+  }
+  .page-logo {
+    font-size: 18px;
+    line-height: 1.11;
+  }
+  .page-logo-icon {
+    width: 24px;
+    height: 24px;
+  }
+  .page-nav {
+    margin-right: 0;
+  }
+  .header-home,
+  .header-how,
+  .header-chok {
+    padding-top: 28px;
+    padding-bottom: 28px;
+  }
+}
+/*=============/Header=====================*/
 /*==============Mobile menu================*/
 .mobile-menu {
   position: fixed;
@@ -138,14 +234,165 @@ button {
   letter-spacing: -0.02em;
   color: #ffffff;
 }
-.header-home {
+.header-home-mobile {
   color: #fd9222;
 }
 .mobile-menu-soc-list {
   display: flex;
   gap: 18px;
 }
-.social-list-link {
+.social-list-link-mobile {
   stroke: #ffffff;
 }
 /*=============/Mobile menu================*/
+/*=============Section 1=====================*/
+.hero-section {
+  max-width: 375px;
+  max-height: 620px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #1e1823;
+  border-radius: 30px;
+  background-image: linear-gradient(
+      rgba(17, 17, 17, 0.4),
+      rgba(17, 17, 17, 0.4)
+    ),
+    url(../img/mobile/chocolate-covered-cocoa-powder-mobile.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.hero-containers {
+  padding: 395px 40px 20px;
+  color: #ffffff;
+}
+.hero-text {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  color: #fff;
+  padding-right: 5px;
+  margin-bottom: 32px;
+}
+.hero-btn {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 32px;
+}
+.bt-buy-now {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 14px;
+  color: #ffffff;
+  background-color: #fd9222;
+  min-width: 120px;
+  height: 41px;
+  border-radius: 100px;
+  border: none;
+  transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.bt-how-its-made {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 14px;
+  color: #ffffff;
+  border: 1px solid #fff;
+  border-radius: 100px;
+  /* padding: 12px 28px; */
+  min-width: 159px;
+  height: 41px;
+  transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 1250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn-scroll-mobile {
+}
+.btn-scroll-down {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 14px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.03em;
+  color: #ffffff;
+  margin-left: auto;
+  margin-right: 12px;
+  transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.check-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.bt-buy-now:hover,
+.bt-buy-now:focus {
+  background-color: #fcf1e0;
+  color: #fd9222;
+}
+.bt-how-its-made:hover,
+.bt-how-its-made:focus {
+  border: 1px solid #fd9222;
+  color: #fd9222;
+  background-color: #ffffff;
+}
+.btn-scroll-down:hover,
+.btn-scroll-down:focus {
+  color: #fd9222;
+}
+@media screen and (max-width: 767px) and (min-resolution: 192dpi) {
+  .hero-section {
+    background-image: linear-gradient(
+        rgba(17, 17, 17, 0.4),
+        rgba(17, 17, 17, 0.4)
+      ),
+      url(../img/mobile/chocolate-covered-cocoa-powder-mobile@2x.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 1200px) {
+}
+/*============/Section 1=====================*/
+/*=============Section 2=====================*/
+@media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 1200px) {
+}
+/*============/Section 2=====================*/
+/*=============Section 3=====================*/
+@media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 1200px) {
+}
+/*============/Section 3=====================*/
+/*=============Section 4=====================*/
+@media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 1200px) {
+}
+/*============/Section 4=====================*/
+/*=============Section 5=====================*/
+@media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 1200px) {
+}
+/*============/Section 5=====================*/
+/*=============Footer=====================*/
+@media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 1200px) {
+}
+/*============/Footer=====================*/
