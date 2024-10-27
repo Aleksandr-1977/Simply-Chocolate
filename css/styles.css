@@ -96,7 +96,7 @@ button {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 28px 0;
+    padding: 0;
   }
   .page-nav {
     display: flex;
@@ -248,7 +248,7 @@ button {
 /*=============Section 1=====================*/
 .hero-section {
   max-width: 375px;
-  max-height: 620px;
+  min-height: 620px;
   margin-left: auto;
   margin-right: auto;
   background-color: #1e1823;
@@ -311,8 +311,7 @@ button {
   transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1),
     color 1250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.btn-scroll-mobile {
-}
+
 .btn-scroll-down {
   display: flex;
   align-items: center;
@@ -362,11 +361,129 @@ button {
   }
 }
 @media screen and (min-width: 768px) {
+  .hero-section {
+    max-width: 768px;
+    min-height: 890px;
+    margin-left: auto;
+    background-image: linear-gradient(
+        rgba(17, 17, 17, 0.4),
+        rgba(17, 17, 17, 0.4)
+      ),
+      url(../img/tablet/chocolate-covered-cocoa-powder-tablet.jpg);
+  }
+  .hero-containers {
+    padding: 671px 72px 40px;
+  }
+  .hero-text {
+    width: 484px;
+    height: 102px;
+    padding-right: 0;
+    font-size: 28px;
+    margin-top: 0;
+    margin-bottom: 32px;
+    text-align: left;
+  }
+  .hero-btn-tablet {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .hero-btn {
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 768px) and (min-resolution: 192dpi) {
+    .hero-section {
+      background-image: linear-gradient(
+          rgba(17, 17, 17, 0.4),
+          rgba(17, 17, 17, 0.4)
+        ),
+        url(../img/tablet/chocolate-covered-cocoa-powder-tablet@2x.jpg);
+    }
+  }
 }
 @media screen and (min-width: 1200px) {
+  .hero-section {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+    min-height: 600px;
+    background-image: linear-gradient(
+        rgba(30, 24, 35, 0.4),
+        rgba(30, 24, 35, 0.4)
+      ),
+      url(../img/chocolate-covered-cocoa-powder.jpg);
+  }
+  .hero-containers {
+    padding: 381px 72px 40px;
+  }
+  .hero-text {
+    min-width: 484px;
+    text-align: justify;
+  }
+  .bt-buy-now {
+    min-width: 144px;
+    height: 45px;
+  }
+  .bt-how-its-made {
+    min-width: 183px;
+    height: 45px;
+  }
+  @media screen and (min-width: 1200px) and (min-resolution: 192dpi) {
+    .hero-section {
+      background-image: linear-gradient(
+          rgba(17, 17, 17, 0.4),
+          rgba(17, 17, 17, 0.4)
+        ),
+        url(../img/chocolate-covered-cocoa-powder@2x.jpg);
+    }
+  }
 }
 /*============/Section 1=====================*/
 /*=============Section 2=====================*/
+.description-section {
+  background-color: #1e1823;
+  margin-top: 60px;
+  padding: 20px 0;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 792px;
+}
+.section-paddigs {
+}
+.page-title {
+  padding-bottom: 18px;
+}
+.description-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+.discription-box-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 62px;
+  width: 62px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background-color: transparent;
+  margin-bottom: 22px;
+}
+.title-discription {
+  font-weight: 600;
+  font-size: 18px;
+  color: #ffffff;
+  margin: 0 0 18px 0;
+}
+.title-text {
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0;
+}
 @media screen and (min-width: 768px) {
 }
 @media screen and (min-width: 1200px) {
