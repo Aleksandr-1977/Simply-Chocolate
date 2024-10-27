@@ -1,23 +1,5 @@
 /*-----------Section2---------------------------------*/
-.section-paddigs {
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-.discription-containers {
-  padding: 0 34px 0 34px;
-}
-.description-section {
-  background-color: #1e1823;
-  margin-top: 72px;
-}
-.description-page {
-  display: flex;
-  justify-content: center;
-  column-gap: 88px;
-}
-.page-title {
-  width: calc((100% - 2 * 88px) / 3);
-}
+
 .discription-box-icon {
   display: flex;
   align-items: center;

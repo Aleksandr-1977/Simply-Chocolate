@@ -56,6 +56,7 @@ button {
   }
 }
 /*----------Header----------------------------------- */
+
 .containers-header {
   display: flex;
   justify-content: space-between;
@@ -92,11 +93,13 @@ button {
   .burger-btn {
     display: none;
   }
+  .page-header {
+  }
   .containers-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0;
+    padding: 0 32px;
   }
   .page-nav {
     display: flex;
@@ -162,6 +165,7 @@ button {
   .containers-header {
     max-width: 1136px;
     column-gap: 90px;
+    padding: 0;
   }
   .logo {
     font-size: 18px;
@@ -429,6 +433,10 @@ button {
     min-width: 183px;
     height: 45px;
   }
+  .check-icon {
+    height: 38px;
+    width: 38px;
+  }
   @media screen and (min-width: 1200px) and (min-resolution: 192dpi) {
     .hero-section {
       background-image: linear-gradient(
@@ -485,8 +493,52 @@ button {
   margin: 0;
 }
 @media screen and (min-width: 768px) {
+  .description-section {
+    margin-top: 40px;
+    padding: 50px 32px;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 620px;
+  }
+  .discription-containers {
+  }
+  .description-page {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 32px;
+  }
+  .page-title {
+    width: calc((100% - 2 * 32px) / 2);
+    padding-bottom: 0;
+  }
+  .title-text {
+    width: 308px;
+  }
 }
 @media screen and (min-width: 1200px) {
+  .description-section {
+    margin-top: 72px;
+    min-height: 344px;
+    padding: 0;
+  }
+  /* .section-paddigs {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  } */
+  .discription-containers {
+    padding: 50px;
+  }
+
+  .description-page {
+    display: flex;
+    justify-content: space-around;
+    column-gap: 88px;
+  }
+  .page-title {
+    width: calc((100% - 2 * 88px) / 3);
+  }
 }
 /*============/Section 2=====================*/
 /*=============Section 3=====================*/
