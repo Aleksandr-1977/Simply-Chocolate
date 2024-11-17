@@ -457,8 +457,6 @@ button {
   margin-right: auto;
   max-height: 792px;
 }
-.section-paddigs {
-}
 .page-title {
   padding-bottom: 18px;
 }
@@ -500,8 +498,7 @@ button {
     margin-right: auto;
     min-height: 620px;
   }
-  .discription-containers {
-  }
+
   .description-page {
     display: flex;
     flex-direction: row;
@@ -523,10 +520,7 @@ button {
     min-height: 344px;
     padding: 0;
   }
-  /* .section-paddigs {
-    padding-top: 50px;
-    padding-bottom: 50px;
-  } */
+
   .discription-containers {
     padding: 50px;
   }
@@ -542,15 +536,250 @@ button {
 }
 /*============/Section 2=====================*/
 /*=============Section 3=====================*/
+.ingredients-section {
+  padding-top: 60px;
+}
+.ingredients-title {
+  max-width: 283px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #111111;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+.orange-logo {
+  color: #fd9222;
+}
+.ingredients-text {
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #111;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 32px;
+}
+.ingredients-foto-part {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+.ingredients-foto {
+  position: relative;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+}
+.foto-page-foto {
+  min-width: 335px;
+  max-height: 270px;
+}
+.ingredints-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  padding: 20px;
+  color: #111111;
+  background-color: #ffffff;
+  border-radius: 15px;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.ingredients-foto:hover .ingredints-overlay {
+  transform: translate(0%);
+}
+.ingredients-overlay-title {
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  margin-top: 0;
+}
+.ingredients-overlay-categories {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 14px;
+}
+.ingredients-overlay-categories-first {
+  border-radius: 35px;
+  padding: 6px 16px;
+
+  height: 24px;
+  background-color: #fd9222;
+  font-size: 10px;
+  line-height: 1.2;
+  color: #fff;
+  text-align: center;
+}
+.ingredients-overlay-categories-second {
+  border: 1px solid #fd9222;
+  border-radius: 35px;
+  padding: 6px 16px;
+
+  height: 24px;
+  background-color: #fafafa;
+  font-size: 10px;
+  line-height: 1.2;
+  color: #111;
+  text-align: center;
+}
+.ingredients-overlay-categories-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
 @media screen and (min-width: 768px) {
+  .ingredients-section {
+    padding-top: 80px;
+  }
+  .ingredients-containers {
+  }
+  .ingredients-title {
+    max-width: 411px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #111111;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 28px;
+  }
+  .ingredients-text {
+    max-width: 486px;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #111;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+  }
+  .ingredients-foto-part {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+  .ingredients-foto {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .foto-page-foto {
+    min-width: 336px;
+    max-height: 270px;
+  }
 }
 @media screen and (min-width: 1200px) {
+  .ingredients-section {
+    padding-top: 100px;
+  }
+  .ingredients-containers {
+    display: block;
+  }
+  .ingredients-title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.17;
+    max-width: 411px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 28px;
+  }
+
+  .ingredients-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+    max-width: 486px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+  }
+  .ingredients-foto-part {
+    display: flex;
+    gap: 19px;
+  }
+  .foto-page-foto {
+    min-width: 270px;
+    max-height: 270px;
+  }
 }
 /*============/Section 3=====================*/
 /*=============Section 4=====================*/
+.how-its-made-section {
+  padding-top: 60px;
+}
+.title-how-its-made {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #111;
+  margin-top: 0;
+  margin-bottom: 32px;
+}
+.how-made-content {
+  display: block;
+  column-gap: 20px;
+}
+.how-made-text-content {
+  padding: 20px 14px;
+}
+
+.discription-text-how-its-made {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  color: #111111;
+  margin-bottom: 20px;
+}
+.text-how-its-made {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: #111111;
+}
+.main-text-how-its-made:not(:last-child) {
+  margin-bottom: 24px;
+}
 @media screen and (min-width: 768px) {
+  .how-its-made-section {
+    padding-top: 80px;
+  }
+  .title-how-its-made {
+    font-size: 24px;
+    line-height: 1.17;
+    margin-bottom: 50px;
+  }
 }
 @media screen and (min-width: 1200px) {
+  .how-its-made-section {
+    padding-top: 100px;
+  }
 }
 /*============/Section 4=====================*/
 /*=============Section 5=====================*/
