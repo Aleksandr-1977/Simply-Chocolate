@@ -5,7 +5,7 @@
 body {
   font-family: 'Montserrat', system-ui;
   color: #434455;
-  background-color: #ffffff;
+  background-color: #fafafa;
 }
 ul,
 ol {
@@ -747,14 +747,19 @@ button {
 }
 .how-made-text-content {
   padding: 20px 14px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  margin-top: 20px;
 }
-
+.how-its-made-list {
+  padding-left: 20px;
+}
 .discription-text-how-its-made {
   font-weight: 600;
   font-size: 18px;
   line-height: 1.33;
   color: #111111;
-  margin-bottom: 20px;
+  margin: 20px 0;
 }
 .text-how-its-made {
   font-weight: 400;
@@ -763,29 +768,191 @@ button {
   letter-spacing: -0.02em;
   color: #111111;
 }
+.main-text-how-its-made {
+  list-style-type: disc;
+}
+.text-how-its-made {
+  margin: 0;
+}
 .main-text-how-its-made:not(:last-child) {
-  margin-bottom: 24px;
+  margin-bottom: 18px;
 }
 @media screen and (min-width: 768px) {
   .how-its-made-section {
     padding-top: 80px;
+    max-width: 614px;
+    margin: 0 auto;
   }
   .title-how-its-made {
     font-size: 24px;
     line-height: 1.17;
     margin-bottom: 50px;
   }
+  .how-made-text-content {
+    padding: 32px;
+  }
+  .discription-text-how-its-made {
+    max-width: 350px;
+  }
+  .main-text-how-its-made {
+    max-width: 464px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .how-its-made-section {
     padding-top: 100px;
   }
+  .how-its-made-section {
+    min-width: 1200px;
+    padding: 100px 20px 0;
+  }
+  .how-made-content {
+    display: flex;
+    column-gap: 20px;
+  }
+  .how-made-text-content {
+    margin-top: 0;
+    max-height: 516px;
+  }
+  .main-text-how-its-made:not(:last-child) {
+    margin-bottom: 24px;
+  }
+  .discription-text-how-its-made {
+    margin-top: 0;
+    margin-bottom: 28px;
+  }
 }
 /*============/Section 4=====================*/
 /*=============Section 5=====================*/
+.section-chocolate-is-loved {
+  padding: 60px 0;
+}
+.title-text-owner {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #111111;
+  margin-bottom: 74px;
+  margin-top: 0px;
+}
+.main-text-owner .owner-avatars {
+  display: none;
+}
+.main-text-owner .owner-avatars:nth-child(1) {
+  display: list-item;
+  margin-bottom: 65px;
+}
+
+.owner-avatars {
+  position: relative;
+
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 15px;
+  box-shadow: 0 9px 100px 0 rgba(17, 17, 17, 0.03);
+  background: #fff;
+  padding: 56px 18px 42px;
+}
+.reviews-list-avatar {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-bottom: 18px;
+  justify-content: center;
+}
+.name-main-text-owner {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  text-align: center;
+  color: #111;
+  margin-bottom: 24px;
+  margin-top: 0;
+}
+.text-page-owner {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: rgba(17, 17, 17, 0.7);
+  margin: 0;
+}
+.bt-leave {
+  display: block;
+  font-weight: 600;
+  font-size: 14px;
+  color: #111111;
+  border: 1px solid #fd9222;
+  border-radius: 100px;
+  padding: 12px 28px;
+
+  min-width: 165px;
+  background-color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+}
+.bt-leave:hover,
+.bt-leave:focus {
+  background: #fd9222;
+  color: #fff;
+  outline: none;
+}
 @media screen and (min-width: 768px) {
+  .section-chocolate-is-loved {
+    padding: 80px 0;
+  }
+  .title-text-owner {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.17;
+    margin-bottom: 91px;
+    margin-top: 0px;
+  }
+  .main-text-owner .owner-avatars:nth-child(1),
+  .main-text-owner .owner-avatars:nth-child(2) {
+    display: list-item;
+    margin-bottom: 0;
+  }
+  .main-text-owner {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 95px;
+    justify-content: center;
+  }
+  .owner-avatars {
+    width: calc((100% - 32px) / 2);
+    padding: 56px 16px 42px;
+  }
+  .bt-leave {
+    display: block;
+    font-weight: 600;
+    font-size: 18px;
+    color: #111111;
+    border: 1px solid #fd9222;
+    border-radius: 100px;
+    padding: 14px 40px;
+    min-width: 222px;
+    background-color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 @media screen and (min-width: 1200px) {
+  .main-text-owner .owner-avatars {
+    display: list-item;
+  }
+  .section-chocolate-is-loved {
+    padding: 100px 20px;
+  }
+  .main-text-owner {
+    display: flex;
+    column-gap: 28px;
+    margin-bottom: 50px;
+  }
 }
 /*============/Section 5=====================*/
 /*=============Footer=====================*/
